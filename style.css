@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(50,50,50,0.3), rgba(50,50,50,0.3)), url("assets/background.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 25rem;
+    height: 38rem;
+    background-color: whitesmoke;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.img {
+    width: 10em;
+    border-radius: 10em;
+    box-shadow: 0px 0px 10px;
+}
+
+li a {
+    width: 20em;
+    height: 2.5em;
+    background-color: rgb(236, 236, 236);
+    color: rgb(20, 20, 20);
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: 0.5s;
+}
+
+li a:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    transition: 0.5s;
+}
+
+
+.icones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.icon {
+    margin: 0em 1em 0em 1em;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    filter: brightness(0.3);
+    transition: 0.4s;
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        border-radius: 0em;
+        height: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    li a {
+        width: 18em;
+    }
+}
+
+@media (max-width: 335px) {
+    li a {  
+        width: 16em;
+    }
+}
+
+@media (max-height: 600px) {
+    li a {
+        width: 18em;
+        height: 2.2em;
+    }
+}
+
+@media (max-height: 590px) {
+    li a {
+        width: 18em;
+        height: 2em;
+    }
+}
